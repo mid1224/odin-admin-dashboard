@@ -7,84 +7,88 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="sidebar">
-        <button id="logo">
-            <div id="logo-icon">
-                <img src="./icons/view-grid-plus.svg">
-            </div>
-            <div id="logo-title">Dashboard</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/home-account.svg">
-            </div>
-            <div class="sidebar-title">Home</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/card-account-details.svg">
-            </div>
-            <div class="sidebar-title">Profile</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/message.svg">
-            </div>
-            <div class="sidebar-title">Messages</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/history.svg">
-            </div>
-            <div class="sidebar-title">History</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/file-multiple.svg">
-            </div>
-            <div class="sidebar-title">Tasks</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/account-group.svg">
-            </div>
-            <div class="sidebar-title">Communities</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/cog.svg">
-            </div>
-            <div class="sidebar-title">Settings</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/help-box.svg">
-            </div>
-            <div class="sidebar-title">Support</div>
-        </button>
-        <button class="sidebar-option">
-            <div class="sidebar-icon">
-                <img src="./icons/shield-check.svg">
-            </div>
-            <div class="sidebar-title">Privacy</div>
-        </button>
+    <div id="sidebar-container">
+        <div id="sidebar">
+            <button id="logo">
+                <div id="logo-icon">
+                    <img src="./icons/view-grid-plus.svg">
+                </div>
+                <div id="logo-title">Dashboard</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/home-account.svg">
+                </div>
+                <div class="sidebar-title">Home</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/card-account-details.svg">
+                </div>
+                <div class="sidebar-title">Profile</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/message.svg">
+                </div>
+                <div class="sidebar-title">Messages</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/history.svg">
+                </div>
+                <div class="sidebar-title">History</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/file-multiple.svg">
+                </div>
+                <div class="sidebar-title">Tasks</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/account-group.svg">
+                </div>
+                <div class="sidebar-title">Communities</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/cog.svg">
+                </div>
+                <div class="sidebar-title">Settings</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/help-box.svg">
+                </div>
+                <div class="sidebar-title">Support</div>
+            </button>
+            <button class="sidebar-option">
+                <div class="sidebar-icon">
+                    <img src="./icons/shield-check.svg">
+                </div>
+                <div class="sidebar-title">Privacy</div>
+            </button>
+        </div>
     </div>
-
     <div id="header">
         <div id="header-upper">
             <button id="search-button">
                 <div class="header-icon">
-
+                    <img src="./icons/magnify.svg">
                 </div>
             </button>
-            <div class="search-bar">
-                <input>
+            <div id="search-bar">
+                <input type="text">
             </div>
-            <button id="notification">
+            <button id="notification-button">
+                <div class="header-icon">
+                    <img src="./icons/bell-ring-outline.svg">
+                </div>
             </button>
             <button id="mini-profile">
                 <div id="mini-profile-avatar">
-
+                    <img src="./images/profile-avatar.JPG">
                 </div>
                 <div id="mini-profile-name">Morgan Oakley</div>
             </button>
@@ -92,7 +96,7 @@
         <div id="header-lower">
             <div id="big-profile">
                 <div id="big-profile-avatar">
-
+                    <img src="./images/profile-avatar.JPG">
                 </div>
                 <div id="greeting">
                     <div id="welcome-text">Hi there,</div>
@@ -100,9 +104,9 @@
                 </div>
             </div>
             <div id="actions">
-                <button id="new-button">New</button>
-                <button id="upload-button">Upload</button>
-                <button id="share-button">Share</button>
+                <button class="action-button">New</button>
+                <button class="action-button">Upload</button>
+                <button class="action-button">Share</button>
             </div>
         </div>
     </div>

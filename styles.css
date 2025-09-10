@@ -1,15 +1,22 @@
 body {
+    margin: 0;
+
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 15px;
+
+    height: 100vh;
 }
 
-#sidebar {
+#sidebar-container {
+    background-color: blue;
+
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+}
 
+#sidebar {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -59,16 +66,22 @@ body {
 
 #header {
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 3; 
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1.5fr;
+
+
+    height: 150px;
+    background-color: red;
 }
 
 #header-upper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 40px 1fr 40px;
+
+    align-items: center;
 }
 
 #header-lower {
@@ -76,6 +89,89 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+#search-button {
+    width: 40px;
+    height: 40px;
+}
+
+.header-icon {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.header-icon img {
+    max-width: 25px;
+    height: auto;
+}
+
+#notification-button {
+    width: 40px;
+    height: 40px;
+
+    grid-column-start: -1;
+    grid-column-end: -2;
+}
+
+#search-bar {
+
+}
+
+#search-bar input {
+    width: 400px;
+    height: 20px;
+}
+
+#mini-profile {
+    grid-column-start: -1;
+    grid-column-end: 6;
+
+    display: grid;
+    grid-template-columns: minmax(40px, 1fr) 3fr;
+
+    align-items: center;
+
+    width: 200px;
+}
+
+#mini-profile-avatar {
+    display: grid;
+    align-items: center;
+}
+
+#mini-profile-avatar img {
+    width: 40px;
+    height: auto;
+}
+
+#header-lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#big-profile {
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) 3fr;
+
+    align-items: center;
+}
+
+#big-profile-avatar img {
+    width: 60px;
+    height: auto;
+}
+
+#actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    align-items: center;
+}
+
+.action-button {
+    height: 40px;
+}
 
 #main-contents {
     grid-column-start: 2;
@@ -85,6 +181,8 @@ body {
     grid-template-columns: 3fr 1fr;
 
     gap: 15px;
+
+    height: 100vh;  
 }
 
 #projects-section {
