@@ -185,6 +185,10 @@ body {
     height: 100vh;  
 }
 
+.section-title {
+    font-weight: bold;
+}
+
 #projects-section {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -204,7 +208,40 @@ body {
 }
 
 .project-item {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
 
+.project-item-title {
+    font-weight: bold;
+}
+
+.project-item-description {
+
+}
+
+.project-actions {
+    display: grid;
+    justify-content: end;
+
+    grid-template-columns: 25px 25px 25px;
+
+    gap: 10px;
+}
+
+.project-action-button {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.project-action-button img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    width: 18px;
 }
 
 #announcements-section {
