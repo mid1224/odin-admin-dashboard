@@ -2,11 +2,26 @@ body {
     margin: 0;
 
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(250px, 0.2fr) 1fr;
 
     height: 100vh;
 
-    background-color: rgb(235, 241, 255)
+    background-color: rgb(235, 241, 255);
+
+    font-family:'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: lightskyblue; /* Green */
+  color: white;
+}
+
+button:active {
+    background-color: white;
 }
 
 #sidebar-container {
@@ -145,6 +160,8 @@ body {
 #mini-profile-avatar img {
     width: 40px;
     height: auto;
+
+    border-radius: 100px;
 }
 
 #header-lower {
@@ -162,6 +179,8 @@ body {
 #big-profile-avatar img {
     width: 60px;
     height: auto;
+
+    border-radius: 100px;
 }
 
 #actions {
@@ -181,7 +200,8 @@ body {
     grid-column-end: 3;
 
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 0.3fr;
+    grid-template-rows: 350px 1fr;
 
     gap: 15px;
 
@@ -191,6 +211,7 @@ body {
 .section-title {
     font-weight: bold;
     margin-bottom: 15px;
+    font-size: 1.25em;
 }
 
 #projects-section {
@@ -226,10 +247,14 @@ body {
 
 .project-item-title {
     font-weight: bold;
+    font-size: 1.15em;
 }
 
 .project-item-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
 
+    color: rgb(100, 100, 100);
 }
 
 .project-actions {
@@ -245,6 +270,12 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background-color: white;
 }
 
 
@@ -259,6 +290,9 @@ body {
 #announcements-section {
     grid-column-start: 2;
     grid-column-end: 3;
+
+    margin-top: 30px;
+    margin-right: 20px;
 }
 
 #announcements-section ul {
@@ -270,11 +304,48 @@ body {
     grid-template-columns: 1fr;
 
     gap: 15px;
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.announcement-item {
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+
+    display: grid;
+    max-height: 50px;
+
+    padding-bottom: 15px;
+}
+
+.announcement-item-title {
+    font-weight: bold;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 0.9em;
+}
+
+.announcement-item-description {    
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 0.8em;
+    color: rgb(100, 100, 100);
 }
 
 #trending-section {
     grid-column-start: 2;
     grid-column-end: 3;
+
+    margin-right: 20px;
 }
 
 #trending-section ul {
@@ -285,9 +356,54 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
 }
 
-.trending-item button {
+.trending-item {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 40px 3fr;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.trending-item-icon {
+    display: grid;
+    align-items: center;
+}
+
+.trending-item-icon img {
+    width: 40px;
+    height: auto;
+
+    border-radius: 100px;
+}
+
+.trending-item-text {
+    display: grid;
+    align-items: center;
+
+    margin-left: 20px;
+}
+
+.trending-item-name {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trending-item-description {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: rgb(100, 100, 100);
+
+    font-size: 0.9em;
 }
