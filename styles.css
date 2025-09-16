@@ -190,6 +190,7 @@ body {
 
 .section-title {
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 #projects-section {
@@ -197,6 +198,9 @@ body {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 #projects-section ul {
@@ -213,6 +217,11 @@ body {
 .project-item {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
+
+    background-color: white;
+    border-radius: 8px;
+
+    padding: 25px;
 }
 
 .project-item-title {
