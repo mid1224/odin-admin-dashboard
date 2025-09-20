@@ -45,6 +45,11 @@ button:active {
     border: 2px solid lightskyblue;
 }
 
+.action-button:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
 #sidebar-container {
     background-color: blue;
 
@@ -125,11 +130,6 @@ button:active {
     grid-template-columns: 40px 1fr 40px;
 
     align-items: center;
-}
-
-#header-lower {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 #search-button {
@@ -237,7 +237,7 @@ button:active {
 
 #header-lower {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 #big-profile {
@@ -265,15 +265,30 @@ button:active {
 }
 
 #actions {
+    grid-column-start: -1;
+    grid-column-end: 6;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 
     align-items: center;
+
+    width: 330px;
+
+    padding-right: 10px
 }
 
 .action-button {
     height: 40px;
+    border: 0;
+    border-radius: 30px;
+
+    font-size: 0.95em;
+    font-weight: 600;
+
+    color: white;
+    background-color: rgb(30, 144, 214)
 }
 
 #main-contents {
