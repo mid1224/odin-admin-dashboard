@@ -18,14 +18,31 @@ button {
 button:hover {
     background-color: lightskyblue; /* Green */
     color: white;
+    cursor: pointer;
 }
 #search-button:hover {
     background-color: lightskyblue; /* Green */
     color: white;
+    cursor: pointer;
+}
+#mini-profile:hover {
+    background-color: lightskyblue; /* Green */
+    color: white;
+    cursor: pointer;
+}
+#notification-button:hover {
+    background-color: lightskyblue; /* Green */
+    color: white;
+    cursor: pointer;
 }
 
 button:active {
     background-color: white;
+}
+
+#search-bar input:focus {
+    outline: none;
+    border: 2px solid lightskyblue;
 }
 
 #sidebar-container {
@@ -99,6 +116,8 @@ button:active {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
 }
 
 #header-upper {
@@ -154,6 +173,11 @@ button:active {
 
     grid-column-start: -1;
     grid-column-end: -2;
+
+    background-color: white;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #search-bar {
@@ -177,11 +201,17 @@ button:active {
     grid-column-end: 6;
 
     display: grid;
-    grid-template-columns: minmax(40px, 1fr) 3fr;
+    grid-template-columns: 40px 3fr;
 
     align-items: center;
+    justify-content: center;
 
     width: 200px;
+
+    background-color: white;
+    border: 0;
+    margin: 0;
+    padding: 5px 20px;
 }
 
 #mini-profile-avatar {
@@ -194,6 +224,15 @@ button:active {
     height: auto;
 
     border-radius: 100px;
+}
+
+#mini-profile-name {
+    text-align: left;
+    margin-left: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #header-lower {
@@ -304,7 +343,10 @@ button:active {
     justify-content: center;
 
     margin: 0;
-    padding: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 0;
     border: 0;
 
     background-color: white;
