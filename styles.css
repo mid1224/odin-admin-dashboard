@@ -242,7 +242,9 @@ button:active {
 
 #big-profile {
     display: grid;
-    grid-template-columns: minmax(60px, 1fr) 3fr;
+    grid-template-columns: 60px 3fr;
+
+    gap: 30px;
 
     align-items: center;
 }
@@ -252,6 +254,14 @@ button:active {
     height: auto;
 
     border-radius: 100px;
+}
+
+#welcome-text {
+    font-weight: bold;
+}
+#big-profile-name {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #actions {
