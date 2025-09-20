@@ -145,6 +145,8 @@ button:active {
     display: grid;
     align-items: center;
     justify-content: center;
+
+    border-radius: 30px;
 }
 
 #search-button img {
@@ -178,6 +180,8 @@ button:active {
     border: 0;
     margin: 0;
     padding: 0;
+
+    border-radius: 30px;
 }
 
 #search-bar {
@@ -212,6 +216,8 @@ button:active {
     border: 0;
     margin: 0;
     padding: 5px 10px;
+
+    border-radius: 30px;
 }
 
 #mini-profile-avatar {
@@ -378,6 +384,8 @@ button:active {
     border: 0;
 
     background-color: white;
+
+    border-radius: 30px;
 }
 
 
