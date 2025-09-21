@@ -2,7 +2,7 @@ body {
     margin: 0;
 
     display: grid;
-    grid-template-columns: minmax(250px, 0.2fr) 1fr;
+    grid-template-columns: 300px 1fr;
 
     height: 100vh;
 
@@ -51,7 +51,7 @@ button:active {
 }
 
 #sidebar-container {
-    background-color: blue;
+    background-color: rgb(30, 144, 214);
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -62,13 +62,22 @@ button:active {
 #sidebar {
     display: grid;
     grid-template-columns: 1fr;
+
+    gap: 15px;
 }
 
 #logo {
     display: grid;
-    grid-template-columns: minmax(40px, 1fr) 3fr;
+    grid-template-columns: 55px 4fr;
 
     gap: 10px;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    background-color: rgb(30, 144, 214);
+    border: 0;
+    padding-left: 20px;
 }
 
 #logo-title {
@@ -77,7 +86,9 @@ button:active {
 
     text-align: left;
     font-weight: bold;
-    font-size: 2em
+    font-size: 2.25em;
+
+    color: white;
 }
 
 #logo-icon {
@@ -87,9 +98,20 @@ button:active {
 
 .sidebar-option {
     display: grid;
-    grid-template-columns: minmax(10px, 1fr) 8fr;
+    grid-template-columns: 30px 1fr;
 
-    gap: 10px;
+    gap: 25px;
+
+    background-color: rgb(30, 144, 214);
+    border: 0;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.sidebar-option:nth-child(8) {
+    margin-top: 50px;
 }
 
 .sidebar-icon {
@@ -103,9 +125,10 @@ button:active {
 
     text-align: left;
     font-weight: bold;
-    font-size: 1em
-}
+    font-size: 1.5em;
 
+    color: white;
+}
 
 #header {
     grid-column-start: 2;
@@ -155,6 +178,8 @@ button:active {
     border: 0;
 
     width: 25px;
+
+    filter: grayscale(0.4) blur(5px);
 }
 
 
@@ -297,7 +322,7 @@ button:active {
     font-weight: 600;
 
     color: white;
-    background-color: rgb(30, 144, 214)
+    background-color: rgb(30, 144, 214);
 }
 
 #main-contents {
