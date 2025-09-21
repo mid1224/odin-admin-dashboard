@@ -178,8 +178,6 @@ button:active {
     border: 0;
 
     width: 25px;
-
-    filter: grayscale(0.4) blur(5px);
 }
 
 
